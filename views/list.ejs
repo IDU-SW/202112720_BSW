@@ -1,16 +1,36 @@
 <!doctype html>
-<html>
+<html> 
   <head>
-    <meta charset="utf-8">
     <title>리스트</title>
     <style>
-      body {
-        background: #D9DADF;
-        margin: 0;
-      }
+        body {background: #D9DADF;}
+        table {background: #fff; border: 1px solid #333; margin: 20px; }
+        td {padding: 10px;}
+        img {height: 200px;}
+        .title {font-size:1.5em; font-weight: bold;}
+        .place {font-size:1em; color: gray;}
+        .content {font-size:1em;}
     </style>
   </head>
   <body>
-    <p>dddddddddddddddddddddddddddddddddddddddd</p>
+
+    <% data.forEach(function(item) { %>
+
+        <table>
+            <tbody>
+              <tr>
+                <td><img src="images/<%= item.image %>" ></td>
+                <td>
+                    <p class="title"><%= item.title %></p>
+                    <p class="place"><%= item.place %></p>
+                    <p class="content"><%= item.content %></p>
+                </td>
+              </tr>
+            </tbody>
+        </table>
+
+    <% }) %>
+
+    
   </body>
 </html>

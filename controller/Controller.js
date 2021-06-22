@@ -2,9 +2,9 @@ const movieModel = require('../model/Model');
 
 function showExhibitionList(req, res) {
     const movieList = movieModel.getExhibitionList();
-    const result = { data:movieList, count:movieList.length };
+    //const result = { data:movieList, count:movieList.length };
     console.log('페이지 - list');
-    res.render('list', {count: 10});
+    res.render('list', {data: movieList});
 }
 
 async function addExhibition(req, res) {
