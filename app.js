@@ -1,5 +1,15 @@
-print('hello world')
+const express = require('express');
+const bodyParser = require('body-parser');
 
-print('hello world2')
+const app = express();
 
-print('hello world2')
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
+
+app.use(bodyParser.json({}));
+app.use(bodyParser.urlencoded({ extended: false }));
+
+const movieRouter = require('./router/Router');
+app.use(movieRouter);
+
+module.exports = app;
