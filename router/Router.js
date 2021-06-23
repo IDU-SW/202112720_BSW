@@ -4,7 +4,7 @@ const {exhibitionController} = require('../controller/Controller');
 
 router.get('/exhibition', exhibitionController.showExhibitionList);
 
-router.post('/exhibition/', exhibitionController.addExhibition);
+router.post('/exhibition', exhibitionController.addExhibition);
 
 router.get('/exhibition/:id', exhibitionController.showExhibitionDetail);
 router.put('/exhibition/:id', exhibitionController.editExhibition);

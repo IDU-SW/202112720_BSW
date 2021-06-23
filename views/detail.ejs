@@ -1,0 +1,35 @@
+<!doctype html>
+<html> 
+  <head>
+    <title>리스트</title>
+    <style>
+        body {background: #D9DADF;}
+        table {width: 900px; background: #fff; border: 1px solid #333; margin: 20px; }
+        td {padding: 10px;}
+        img {height: 250px;}
+        .title {font-size:1.5em; font-weight: bold;}
+        .place {font-size:1em; color: gray;}
+        .content {font-size:1em;}
+    </style>
+  </head>
+  <body>
+
+    <% data2.forEach(function(item) { %>
+      <center>
+      <table>
+          <tbody>
+            <tr>
+              <td>
+                  <p class="title"><%= item.title %></p>
+                  <p class="place"><%= item.place %></p>
+                  <p class="content"><%= item.content %></p>
+              </td>
+            </tr>
+          </tbody>
+      </table>
+      <iframe src="https://www.google.com/maps/embed?<%= item.xy %>" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </center>
+    <% }) %>
+
+  </body>
+</html>
