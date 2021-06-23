@@ -1,6 +1,23 @@
 # 202112720_배성원
 
-gbgb
+|기능|url|method|
+|------|---|---|
+|전시 리스트 보기|테스트2|테스트3|
+|전시 상세 보기|테스트2|테스트3|
+|전시 삭제|테스트2|테스트3|
+|전시 수정|테스트2|테스트3|
+|전시 삭제|테스트2|테스트3|
+
+
+### DB
+*  `id` int(11) NOT NULL AUTO_INCREMENT,    
+*  `title` varchar(50) NOT NULL,    
+*  `image` varchar(100) DEFAULT NULL,    
+*  `place` varchar(100) DEFAULT NULL,    
+*  `content` text DEFAULT NULL,    
+*  `xy` text DEFAULT NULL,    
+*  PRIMARY KEY (`id`)    
+
 
 ### 전시 리스트 화면
 ![1](https://user-images.githubusercontent.com/80378226/123109875-91aa0400-d476-11eb-8cc2-b23fa55b2cf0.PNG)
