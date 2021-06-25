@@ -1,10 +1,10 @@
 # 202112720_배성원
 
 ### aws 주소
-http://3.37.202.209:3000/exhibition 전시 리스트
-http://3.37.202.209:3000/exhibition/1 라이프 전시전
-http://3.37.202.209:3000/exhibition/4 미완의 단면들
-http://3.37.202.209:3000/exhibition/5 도서관 속 작업실
+http://3.37.202.209:3000/exhibition 전시 리스트    
+http://3.37.202.209:3000/exhibition/1 라이프 전시전    
+http://3.37.202.209:3000/exhibition/4 미완의 단면들    
+http://3.37.202.209:3000/exhibition/5 도서관 속 작업실    
 
 ### 통신규약
 |기능|url|method|
